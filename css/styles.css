@@ -275,6 +275,9 @@ nav .nav-link {
   margin-right: auto;
   height: 50px;
   min-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--accent-color);
 
   background-color: var(--accent-color);
   color: var(--white);
@@ -291,6 +294,7 @@ nav .nav-link {
   z-index: 100;
   opacity: 1;
   transition: opacity 1s;
+  overflow: auto;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -343,7 +347,9 @@ nav .nav-link {
   /* transform: translateY(50%); */
   fill: black;
 }
-.modal .button {
+.button-modal-submit {
+  display: block;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -385,7 +391,7 @@ nav .nav-link {
 .contact-date {
   padding-bottom: 20px;
 }
-form a {
+.modal a {
   color: var(--accent-color);
   text-decoration: underline;
   cursor: pointer;
@@ -419,6 +425,7 @@ form a {
 }
 .label-checkbox {
   display: block;
+  margin-top: 20px;
 }
 .checkbox:checked + .icon-checkbox {
   background-color: var(--accent-color);

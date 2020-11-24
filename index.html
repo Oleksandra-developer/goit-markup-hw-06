@@ -257,9 +257,8 @@
         </section>
     </main>
     <footer class="bg-footer">
-        <div class="container">
-            <ul class="footer-columns">
-                <li class="column">
+        <div class="container footer-columns">
+            <div class="column">
                     <a href="./index.html" class="logo">Web<span class="logo-1">Studio</span></a>
                     <address class="adress">
                         <p>г. Киев, пр-т Леси Украинки, 26</p>
@@ -271,33 +270,33 @@
                                     11</a></li>
                         </ul>
                     </address>
-                </li>
-                <li class="column">
-                    <h3 class="title-3">Присоединяйтесь</h3>
-                    <ul class="social">
-                        <li class="social-button"> <a href="link" class="social-link">
-                                <svg width="20" height="20">
-                                    <use class="social-item" height="20px" width="20px" cx="22" cy="22"
-                                        href="./images/icons/symbol-defs.svg#instagram"></use>
-                                </svg></a></li>
-                        <li class="social-button"><a href="link" class="social-link">
-                                <svg width="20" height="20">
-                                    <use class="social-item" height="20px" width="20px" cx="22" cy="22"
-                                        href="./images/icons/symbol-defs.svg#twitter"></use>
-                                </svg></a></li>
-                        <li class="social-button"><a href="link" class="social-link">
-                                <svg width="20" height="20">
-                                    <use class="social-item" height="20px" width="20px" cx="22" cy="22"
-                                        href="./images/icons/symbol-defs.svg#facebook"></use>
-                                </svg></a></li>
-                        <li class="social-button"><a href="link" class="social-link">
-                                <svg width="20" height="20">
-                                    <use class="social-item" height="20px" width="20px" cx="22" cy="22"
-                                        href="./images/icons/symbol-defs.svg#linkedin"></use>
-                                </svg></a></li>
-                    </ul>
-                </li>
-                <li class="column">
+            </div>
+            <div class="column">
+                   <h3 class="title-3">Присоединяйтесь</h3>
+            <ul class="social">
+                <li class="social-button"> <a href="link" class="social-link">
+                        <svg width="20" height="20">
+                            <use class="social-item" height="20px" width="20px" cx="22" cy="22"
+                                href="./images/icons/symbol-defs.svg#instagram"></use>
+                        </svg></a></li>
+                <li class="social-button"><a href="link" class="social-link">
+                        <svg width="20" height="20">
+                            <use class="social-item" height="20px" width="20px" cx="22" cy="22"
+                                href="./images/icons/symbol-defs.svg#twitter"></use>
+                        </svg></a></li>
+                <li class="social-button"><a href="link" class="social-link">
+                        <svg width="20" height="20">
+                            <use class="social-item" height="20px" width="20px" cx="22" cy="22"
+                                href="./images/icons/symbol-defs.svg#facebook"></use>
+                        </svg></a></li>
+                <li class="social-button"><a href="link" class="social-link">
+                        <svg width="20" height="20">
+                            <use class="social-item" height="20px" width="20px" cx="22" cy="22"
+                                href="./images/icons/symbol-defs.svg#linkedin"></use>
+                        </svg></a></li>
+            </ul>
+            </div>
+            <div class="column">
                     <h3 class="title-3">Подпишитесь на рассылку</h3>
                    <div class="send">
                         <form class="subscription">                       
@@ -310,11 +309,10 @@
                         </svg>
                         </button>
                     </div>
-                </li>
-            </ul>
+            </div>
         </div>
     </footer>
-        <div class="backdrop is-hidden " data-modal>
+    <div class="backdrop is-hidden " data-modal>
         <div class="modal">
             <h3 class="title-3">Оставьте свои данные, мы вам перезвоним</h3>
             <div class="close-button" data-modal-close>
@@ -323,8 +321,9 @@
                 </svg>
             </div>
            <div role="group" class="contact-date"> 
-               <form class="customer-date" autocomplete="off">
-               <div class="form-field"><label for="name" class="label-modal">Имя</label>
+            <form class="customer-date" autocomplete="off">
+               <div class="form-field">
+                   <label for="name" class="label-modal">Имя</label>
                 <input type="text" id="name" class="field-modal">
                 <svg class="icon-send" width="18" height="18">
                 <use href="../images/icons/sprite.svg#person"></use></svg>
@@ -342,26 +341,23 @@
                 <input type="mail" id="mail" class="field-modal"><svg class="icon-send" width="18" height="18">
                     <use href="../images/icons/sprite.svg#email"></use>
                 </svg>
-            </div></form>
-            <form class="customer-date">
+            </div>
             <label for="comment" class="label-modal">Комментарий</label>
             <textarea 
             class="textarea"
             id="comment"
             name="comment" 
             rows="4" 
-            cols="60" 
+            cols="57" 
             placeholder="Введите текст"></textarea>
-            </form>
-            </div>
-            <form class="form-agreement">
-               <label class="label-checkbox">
+             </div>
+            <label class="label-checkbox">
                  <input type="checkbox" value="yep" class="checkbox"> 
                  <span class="icon-checkbox"></span>
             Соглашаюсь с рассылкой и принимаю <a href="link" class="agreement">Условия договора</a>
-                </label>
+            </label>
+            <button type="submit" class="button button-modal-submit">Отправить</button>
             </form>
-            <button type="submit" class="button">Отправить</button>
         </div>
     </div>
     <script src="./js/modal.js">
