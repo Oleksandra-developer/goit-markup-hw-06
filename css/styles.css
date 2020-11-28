@@ -428,7 +428,7 @@ nav .nav-link {
 }
 .label-checkbox {
   display: block;
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 .checkbox:checked + .icon-checkbox {
   background-color: var(--accent-color);
