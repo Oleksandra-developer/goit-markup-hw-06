@@ -386,7 +386,9 @@ nav .nav-link {
   border: 1px solid var(--accent-color);
   outline: none;
 }
-.field-modal:hover ~ .icon-send {
+.field-modal:hover ~ .icon-send,
+.field-modal:focus ~ .icon-send,
+.field-modal:active ~ .icon-send {
   fill: var(--accent-color);
 }
 .contact-date {
