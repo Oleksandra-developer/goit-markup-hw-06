@@ -347,6 +347,7 @@ nav .nav-link {
   /* transform: translateY(50%); */
   fill: black;
 }
+
 .button-modal-submit {
   display: block;
   margin-top: 30px;
@@ -425,7 +426,7 @@ nav .nav-link {
 }
 .label-checkbox {
   display: block;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .checkbox:checked + .icon-checkbox {
   background-color: var(--accent-color);
